@@ -1,9 +1,9 @@
 class profile::ssh_clients {
-  host {'db_server':
+  host {'db.puppet.vm':
     ensure => 'present',
     ip     => '172.18.0.3',
   }
-  host {'web_server':
+  host {'web.puppet.vm':
     ensure => 'present',
     ip     => '172.18.0.2',
   }
